@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "773593235202",
+    "project_id": "coursework-mobile-app",
+    "storage_bucket": "coursework-mobile-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773593235202:android:5788cf74538b1d94758c1b",
+        "android_client_info": {
+          "package_name": "com.example.coursework1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNTrod2mYQtnaNXZ3CqFZC10N3o1NG9BI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773593235202:android:64361e74ed3f4530758c1b",
+        "android_client_info": {
+          "package_name": "com.example.courseworkAC1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNTrod2mYQtnaNXZ3CqFZC10N3o1NG9BI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
