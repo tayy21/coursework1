@@ -30,13 +30,7 @@ class MainActivity : AppCompatActivity() {
             val password = passwordEditText.text.toString()
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
-                // Check if the email contains "@admin"
-                if (email.contains("@admin")) {
-                    // Redirect to the admin page
-                    val adminIntent = Intent(this, AdminMenuActivity::class.java)
-                    startActivity(adminIntent)
-                    return@setOnClickListener
-                }
+
 
                 // If not an admin, proceed with regular login
                 firebaseAuth.signInWithEmailAndPassword(email, password)
@@ -46,6 +40,12 @@ class MainActivity : AppCompatActivity() {
                                 this, "Authentication Passed!",
                                 Toast.LENGTH_SHORT
                             ).show()
+                            // Check if the email contains "@admin"
+                            if (email.contains("@admin")) {
+                                // Redirect to the admin page
+                                val adminIntent = Intent(this, AdminMenuActivity::class.java)
+                                startActivity(adminIntent)
+                            }
                         } else {
                             // Login failed, display an error message to the user.
                             Toast.makeText(
